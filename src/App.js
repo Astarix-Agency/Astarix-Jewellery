@@ -1,24 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import {useEffect} from 'react'
+import {useLocation,useNavigate} from 'react-router-dom';
+import Home from './component/home'
+import {Route,Routes} from 'react-router-dom';
+import Necklace_AR from './Pages/AR/Necklace/necklace_sample'
+import Earing_AR from './Pages/AR/Earings/earing_sample'
+import Earing2_3D from './Pages/3D/Earings/Earing2';
+import Earing13D from './Pages/3D/Earings/Earing1';
+import Necklace13D from './Pages/3D/Necklace/Nacklace1'
+import Necklace23D from './Pages/3D/Necklace/Neacklace2'
+import Bracelet from './Pages/3D/Bracelets/Bracelet1'
+import Ring from './Pages/3D/Rings/Ring1'
 
 function App() {
+  const navigate=useNavigate()
+  const location = useLocation();
+  useEffect(() => {
+    if (location.state && location.state.reload) {
+    navigate('/',{replace:false},{state:null})
+      window.location.reload();
+    }
+  }, [location]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/ring1/1' element={<Ring/>}/>
+        <Route path='/earing1/1' element={<Earing13D/>}/>
+        <Route path='/bracelet1/1' element={<Bracelet/>}/>
+        <Route path='/earing2/2' element={<Earing2_3D/>}/>
+        <Route path='/necklace1/1' element={<Necklace13D/>}/>
+        <Route path='/necklace2/2' element={<Necklace23D/>}/>
+        <Route path='/earing1/ar' element={<Earing_AR Model='Earing1' ThreeD='/earing1/1'/>}/>
+        <Route path='/earing2/ar' element={<Earing_AR Model='Earing2' ThreeD='/earing2/2'/>}/>
+        <Route path='/earing3/ar' element={<Earing_AR Model='Earing3' ThreeD='/earing3/3'/>}/>
+        <Route path='/necklace1/ar' element={<Necklace_AR Model='Necklace1' ThreeD='/necklace1/1'/>}/>
+        <Route path='/necklace2/ar' element={<Necklace_AR Model='Necklace2' ThreeD='/necklace2/2'/>}/>
+      </Routes>
+    </>
   );
 }
 

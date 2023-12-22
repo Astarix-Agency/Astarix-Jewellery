@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+body
+{
+
+    background-color: #EDEDED;
+    font-family: 'Antic Didone', sans-serif;
+    font-weight: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header
+{
+    display: flex;
+    flex-direction: row;
+}
+.logo
+{
+    flex:1;
+    margin-left: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.profile
+{
+    margin: 34px;
+}
+
+
+.search-filter img
+{
+    margin-left: 15px;
+    
+}
+  
+
+.tags
+{
+    margin-top:30px ;
+    margin-left:20px ;
+    display: grid;
+    grid-template-columns:100px 100px 100px  100px 100px;
+    gap: 30px;
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+}
+.tags::-webkit-scrollbar {
+    width: 1px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .tags::-webkit-scrollbar-thumb {
+    background-color: transparent; /* hide scrollbar, but keep functionality */
   }
-  to {
-    transform: rotate(360deg);
+  
+  .tags::-webkit-scrollbar-track {
+    background-color: transparent; /* hide scrollbar, but keep functionality */
   }
+  
+button
+{
+    font-family: 'Antic Didone', sans-serif;
+    font-weight: 600;
+    background-color: #D9D9D9;
+    border:solid 0px #D9D9D9;
+    border-radius: 15px;
+    height: 30px;
+
 }
+
+  .earing {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .earing-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .earing-info {
+    border-radius: 5%;
+    background-color: #D9D9D9;
+    position: relative;
+    margin-bottom:50px ;
+
+  }
+  
+  .search-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .earing-info img {
+    width: 200px;
+    border-radius: 5%;
+  }
+  h1
+  {
+    background-image: linear-gradient( #e916d7, #4207f3,#950cf0);
+    color: transparent;
+    background-clip: text;
+  }
+  .basic-desc
+  {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .price-desc
+  {
+    display: flex;
+    flex-direction: row;
+    margin-bottom:0px ;
+  }
+
+.earing-desc
+{
+    flex:1;
+}
+
+
+
+
+  .ar-3d {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .controls
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .back-btn
+  {
+    margin-right:50px ;
+    height: 60px;
+    width: 70px;
+    font-size: medium;
+    padding: 1px;
+  }
+  .controls a
+  {
+    text-decoration: none;
+  }
+  .view-ar
+  {
+    margin-left:20px ;
+    height: 60px;
+    width: 90px;
+    font-size: 15px;
+  }
+  @media (max-width: 768px) {
+    .earing-info {
+      flex-direction: column; 
+      width: 90%;
+      margin-bottom:50px ;
+    }
+    .earing
+    {
+        align-items: center;
+    }
+    .earing-info img {
+      width: 100%; 
+      
+    }
+  
+    .earing-head {
+      flex-direction: column; 
+      align-items: center;
+    }
+  }
+  @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .search-filter img
+    {
+        width: 600px;
+    }
+}
+  
