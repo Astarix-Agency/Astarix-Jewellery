@@ -33,7 +33,7 @@ function App() {
         <Route path='/necklace2/2' element={<Necklace23D/>}/>
         <Route path='/earing1/ar' element={<Earing_AR Model='Earing1' ThreeD='/earing1/1'/>}/>
         <Route path='/earing2/ar' element={<Earing_AR Model='Earing2' ThreeD='/earing2/2'/>}/>
-        <Route path='/earing3/ar' element={<Earing_AR Model='Earing3' ThreeD='/earing3/3'/>}/>
+       
         <Route path='/necklace1/ar' element={<Necklace_AR Model='Necklace1' ThreeD='/necklace1/1'/>}/>
         <Route path='/necklace2/ar' element={<Necklace_AR Model='Necklace2' ThreeD='/necklace2/2'/>}/>
       </Routes>
