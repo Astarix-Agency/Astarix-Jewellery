@@ -1,7 +1,7 @@
 import { useRef, Suspense,useEffect } from 'react';
 import * as THREE from 'three';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useGLTF } from '@react-three/drei';
+import { Environment, useGLTF,Center } from '@react-three/drei';
 import {useLocation,useNavigate} from 'react-router-dom';
 
 import { OrbitControls, useTexture } from '@react-three/drei';
@@ -43,8 +43,8 @@ function EaringModel(props) {
         >
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} />
-
-          <group ref={group} {...props} position={[-1,0,0]} rotation={[0, 20, 0]} scale={[0.03, 0.03, 0.03]} dispose={null}>
+          <Center/>
+          <group ref={group} {...props} position={[-1.5,0,0]} rotation={[0, 20, 0]} scale={[0.02, 0.02, 0.02]} dispose={null}>
             <mesh geometry={nodes.Diamonds001.geometry} material={materials.wire_000000000} rotation={[Math.PI / 2, 0, 0]}>
               <meshStandardMaterial map={diamondTexture} />
             </mesh>
@@ -61,8 +61,10 @@ function EaringModel(props) {
             <mesh geometry={nodes.end_holder.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} />
 
           </group>
+          
 
-          <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
+          <OrbitControls   />
+          <Environment preset='sunset'/>
         </Canvas>
 
         <div className="controls">

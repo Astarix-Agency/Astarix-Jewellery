@@ -1,7 +1,7 @@
 import { useRef,Suspense } from 'react';
 import * as THREE from 'three';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useGLTF } from '@react-three/drei';
+import { Center, ContactShadows, Environment, useGLTF } from '@react-three/drei';
 import { OrbitControls, useTexture } from '@react-three/drei';
 import nec1_close from '../../../Textures/Necklace_01_closeup.png'
 import nec1_front from '../../../Textures/Necklace_01.png'
@@ -14,18 +14,21 @@ function EaringModel(props) {
   
     // Load diamond texture
     const rubyRedMaterial = new THREE.MeshStandardMaterial({
-        color: new THREE.Color('#E0115F'),
-        
+        color: new THREE.Color('#9b111e'),
+        metalness: 0.5, // Adjust the metalness value
+        roughness: 0.8,
       });
       
       const silverMaterial = new THREE.MeshStandardMaterial({
         color: new THREE.Color('#C0C0C0'),
-        
+        metalness: 0.5, // Adjust the metalness value
+        roughness: 0.8,
       });
       
       const goldenMaterial = new THREE.MeshStandardMaterial({
         color: new THREE.Color('goldenrod'),
-       
+        metalness: 0.5, // Adjust the metalness value
+        roughness: 0.8,
       });
   
     return (
@@ -41,15 +44,17 @@ function EaringModel(props) {
         >
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} />
-  
-          <group ref={group} {...props} position={[-1.0,-3.0,0]} scale={[0.02, 0.02, 0.02]} dispose={null}>
+          <Center/>
+          <group ref={group} {...props} position={[-1.5,-2.0,0]} scale={[0.02, 0.02, 0.02]} dispose={null}>
     <mesh geometry={nodes.Big_diamond.geometry} material={rubyRedMaterial} rotation={[Math.PI / 2, 0, 0]} />
     <mesh geometry={nodes.Connection_points.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} />
     <mesh geometry={nodes.Small_diamonds.geometry} material={silverMaterial} rotation={[Math.PI / 2, 0, 0]} />
     <mesh geometry={nodes.Backplate.geometry} material={silverMaterial} rotation={[Math.PI / 2, 0, 0]} />
     <mesh geometry={nodes.Chain.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} />
-  </group>
+          </group>
           <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
+          <Environment preset='sunset'/>
+          
         </Canvas>
   
         <div className="controls">

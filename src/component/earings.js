@@ -12,11 +12,14 @@ const Handle3D=(link3D)=>{
 
 }
     return (
+        <>
+        <div className="ornament-head">
+                
+            </div>
         <div className="earing-head">
             {
                 Earings.map((earing) => {
                     return (
-                        <>
                         
                         <div key={earing.id} className='earing-info'>
                             <div className="earing-logo">
@@ -42,11 +45,11 @@ const Handle3D=(link3D)=>{
 
                         </div>
                         
-                        </>
                     )
                 })
             }
         </div>
+        </>
     )
 }
 export default earings;

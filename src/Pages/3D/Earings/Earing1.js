@@ -1,9 +1,11 @@
 import {Suspense, useRef,useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
+import * as THREE from 'three';
 import {useLocation,useNavigate} from 'react-router-dom';
-import { useGLTF } from '@react-three/drei';
+import { Center, Environment, useGLTF } from '@react-three/drei';
 import { OrbitControls } from '@react-three/drei';
 import {Link} from 'react-router-dom'
+const texture=new THREE.TextureLoader();
 function EaringModel(props) {
   const navigate=useNavigate()
   const location = useLocation();
@@ -12,7 +14,7 @@ function EaringModel(props) {
     const { nodes, materials } = useGLTF('/3D/Earing_01_updated.glb');
     useEffect(() => {
       if (location.state && location.state.reload) {
-      navigate('/earing1/1',{replace:false},{state:null})
+      navigate('/earing2/2',{replace:false},{state:null})
         window.location.reload();
       }
     }, [location]);
@@ -30,8 +32,8 @@ function EaringModel(props) {
         >
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} />
-  
-          <group ref={group} {...props} position={[-1.5,0,0]} rotation={[0,-40,0]} scale={[0.05, 0.05, 0.05]} dispose={null}>
+          <Center/>
+          <group ref={group} {...props} position={[-1.5,1.3,0]} rotation={[0,-40,0]} scale={[0.03, 0.03, 0.03]} dispose={null}>
             <mesh geometry={nodes.Diamonds.geometry} material={materials.wire_088144225} rotation={[Math.PI / 2, 0, 0]}>
               <meshStandardMaterial color="white" />
             </mesh>
@@ -40,7 +42,7 @@ function EaringModel(props) {
               <meshStandardMaterial color="goldenrod" />
             </mesh>
             <mesh geometry={nodes.Diamond_connectors.geometry} material={materials.wire_088144225} rotation={[Math.PI / 2, 0, 0]}>
-              <meshStandardMaterial color="goldenrod" />
+              <meshStandardMaterial color="white" />
             </mesh>
             <mesh geometry={nodes.connector.geometry} material={materials.wire_088144225} rotation={[Math.PI / 2, 0, 0]}>
               <meshStandardMaterial color="goldenrod" />
@@ -51,6 +53,7 @@ function EaringModel(props) {
           </group>
   
           <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
+          <Environment preset='sunset'/>
         </Canvas>
 
   
