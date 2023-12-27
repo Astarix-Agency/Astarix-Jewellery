@@ -1,5 +1,7 @@
-import { useRef, Suspense } from 'react';
+import { useRef, Suspense,useEffect} from 'react';
 import * as THREE from 'three';
+import { useLocation, useNavigate } from 'react-router-dom';
+
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Center, Environment, useGLTF } from '@react-three/drei';
 import { OrbitControls, useTexture } from '@react-three/drei';
@@ -11,7 +13,14 @@ function EaringModel(props) {
   const { nodes, materials } = useGLTF('/3D/updated_necklace_02.glb');
   const textureLoader = new THREE.TextureLoader();
   const diamondTexture = textureLoader.load(nec2_close);
-
+  const navigate = useNavigate()
+  const location = useLocation();
+  useEffect(() => {
+    if (location.state && location.state.reload) {
+      navigate('/necklace2/2', { replace: false }, { state: null })
+      window.location.reload();
+    }
+  }, [location]);
  
 
   const goldenMaterial = new THREE.MeshStandardMaterial({
@@ -49,7 +58,7 @@ function EaringModel(props) {
 
         <div className="controls">
           <button className='back-btn'><Link to='/'>{arrow} Back</Link></button>
-          <button className='view-ar'><Link to='/earing1/ar'>View in AR</Link></button>
+          
         </div>
       </Suspense>
     </>

@@ -1,4 +1,4 @@
-import Logo from '../images/astarix-logo.png'
+import Logo from '../images/Astarix logo v2.1.png'
 import { CgProfile } from "react-icons/cg";
 import Searchfilter from '../images/search-filter.png'
 const header = () => {

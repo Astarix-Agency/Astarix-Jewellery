@@ -12,7 +12,7 @@ function EaringModel(props) {
   const { nodes, materials } = useGLTF('/3D/jashin_necklace.glb');
   useEffect(() => {
     if (location.state && location.state.reload) {
-      navigate('/earing2/2', { replace: false }, { state: null })
+      navigate('/necklace1/1', { replace: false }, { state: null })
       window.location.reload();
     }
   }, [location]);
@@ -47,7 +47,7 @@ function EaringModel(props) {
 
         <div className="controls">
           <button className='back-btn'><Link to='/'>{arrow} Back</Link></button>
-          <button className='view-ar'><Link to='/earing1/ar'>View in AR</Link></button>
+          
         </div>
       </Suspense>
 

@@ -8,17 +8,13 @@ const DeepARComponent = (props) => {
     navigate('/',{state:{reload:true}});
 
   }
-  const handle3D=()=>
-  {
-    navigate(`${props.ThreeD}`,{state:{reload:true}});
-
-  }
+  
   const arrow='<-'
   useEffect(() => {
     const initializeDeepAR = async () => {
       try {
         const deepAR = await deepar.initialize({
-          licenseKey: 'bb083aea903eaccffb0572950babc1abbe3440a5d7927b2f45427ba04ea741c48b12ad91c858aa93',
+          licenseKey: '7bfd3466084e77afcf7c2615b54ba7f452de93638926cd9eebccbdcdee0a238465db251fc346fa39',
           previewElement: document.querySelector('#deepar-div'),
           effect: `/AR/${props.Model}.deepar`
         });
@@ -40,7 +36,7 @@ const DeepARComponent = (props) => {
       </div>
       <div className="controls">
           <button className='back-btn' onClick={handleClose}><Link to='/'>{arrow} Back</Link></button>
-          <button className='view-ar' onClick={handle3D}><Link to={props.ThreeD}>View in 3D</Link></button>
+          
         </div>
     </>
   );

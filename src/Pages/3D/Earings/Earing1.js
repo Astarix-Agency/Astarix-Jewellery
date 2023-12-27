@@ -14,7 +14,7 @@ function EaringModel(props) {
   const { nodes, materials } = useGLTF('/3D/unum_earrings.glb');
   useEffect(() => {
     if (location.state && location.state.reload) {
-      navigate('/earing2/2', { replace: false }, { state: null })
+      navigate('/earing1/1', { replace: false }, { state: null })
       window.location.reload();
     }
   }, [location]);
@@ -33,7 +33,7 @@ function EaringModel(props) {
           {/* <ambientLight intensity={0.2} /> */}
           {/* <pointLight position={[10, 10, 10]} /> */}
           <Center />
-          <group ref={group} {...props} position={[-1.4, 2.3, 0]} rotation={[0, -40, 0]} scale={[0.2, 0.2, 0.2]} dispose={null}>
+          <group ref={group} {...props} position={[-1.4, 2.3, 0]} rotation={[0, -40, 0]} scale={[0.1, 0.1, 0.1]} dispose={null}>
             <group rotation={[-Math.PI / 2, 0, 0]}>
               <mesh geometry={nodes.Object_2.geometry} material={materials['Grey_Plastic-6ff0b6b4-6c0f-4afb-9243-252bb30e223f']} />
               <mesh geometry={nodes.Object_3.geometry} material={materials['Silver-f0e1bef8-7480-40bb-a4aa-0a15c0518902']} />
@@ -49,7 +49,7 @@ function EaringModel(props) {
 
         <div className="controls">
           <button className='back-btn'><Link to='/'>{arrow} Back</Link></button>
-          <button className='view-ar'><Link to='/earing1/ar'>View in AR</Link></button>
+          
         </div>
       </Suspense>
 

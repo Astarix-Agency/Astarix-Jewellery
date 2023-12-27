@@ -14,14 +14,19 @@ body
 }
 .logo
 {
-    flex:1;
-    margin-left: 15px;
+  flex:1;
+}
+.logo img
+{
+    width: 150px;
+    height: 150px;
 }
 
 
 .profile
 {
-    margin: 34px;
+  margin-top:50px;
+  margin-right:10px ;
 }
 
 
