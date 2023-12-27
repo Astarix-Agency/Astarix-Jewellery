@@ -1,8 +1,8 @@
-import { useRef, Suspense,useEffect } from 'react';
+import { useRef, Suspense, useEffect } from 'react';
 import * as THREE from 'three';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Environment, useGLTF,Center } from '@react-three/drei';
-import {useLocation,useNavigate} from 'react-router-dom';
+import { Environment, useGLTF, Center } from '@react-three/drei';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import { OrbitControls, useTexture } from '@react-three/drei';
 import Earing2_front from '../../../Textures/2nd_earing_front.jpg'
@@ -10,13 +10,13 @@ import { Link } from 'react-router-dom'
 function EaringModel(props) {
   const arrow = '<-';
   const group = useRef();
-  const { nodes, materials } = useGLTF('/3D/Earing_02_updated.glb');
+  const { nodes, materials } = useGLTF('/3D/earing2.glb');
   const textureLoader = new THREE.TextureLoader();
-  const navigate=useNavigate()
+  const navigate = useNavigate()
   const location = useLocation();
   useEffect(() => {
     if (location.state && location.state.reload) {
-    navigate('/earing2/2',{replace:false},{state:null})
+      navigate('/earing2/2', { replace: false }, { state: null })
       window.location.reload();
     }
   }, [location]);
@@ -43,28 +43,17 @@ function EaringModel(props) {
         >
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} />
-          <Center/>
-          <group ref={group} {...props} position={[-1.5,0,0]} rotation={[0, 20, 0]} scale={[0.02, 0.02, 0.02]} dispose={null}>
-            <mesh geometry={nodes.Diamonds001.geometry} material={materials.wire_000000000} rotation={[Math.PI / 2, 0, 0]}>
-              <meshStandardMaterial map={diamondTexture} />
-            </mesh>
-
-            {/* Golden Parts */}
-            <mesh geometry={nodes.GOLD_PARTS.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} />
-            <mesh geometry={nodes.GOLD_PARTS000.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} />
-            <mesh geometry={nodes.GOLD_PARTS001.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} />
-            <mesh geometry={nodes.GOLD_PARTS002.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} />
-
-            {/* Backplate and connectors */}
-            <mesh geometry={nodes.Backplate001.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} />
-            <mesh geometry={nodes.connectror_rod.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} />
-            <mesh geometry={nodes.end_holder.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} />
-
+          <Center />
+          <group ref={group} {...props} position={[-1.5, 1, 0]} rotation={[0, 20, 0]} scale={[0.9, 0.9, 0.9]} dispose={null}>
+            <mesh geometry={nodes.pCylinder1_blinn2_0.geometry} material={materials.blinn2} />
+            <mesh geometry={nodes.pCylinder2_blinn4_0.geometry} material={materials.blinn4} position={[0, 1.162, 0]} scale={[0.104, 0.081, 0.104]} />
+            <mesh geometry={nodes.pTorus1_blinn3_0.geometry} material={materials.blinn3} position={[0, 1.475, 0]} rotation={[0, 0, Math.PI / 2]} scale={0.256} />
+            <mesh geometry={nodes.pSphere1_blinn1_0.geometry} material={materials.blinn1} position={[0.043, 1.485, 0]} scale={0.223} />
           </group>
-          
 
-          <OrbitControls   />
-          <Environment preset='sunset'/>
+
+          <OrbitControls />
+          <Environment preset='sunset' />
         </Canvas>
 
         <div className="controls">

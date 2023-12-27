@@ -1,42 +1,28 @@
-import { useRef,Suspense } from 'react';
-import * as THREE from 'three';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { Center, ContactShadows, Environment, useGLTF } from '@react-three/drei';
-import { OrbitControls, useTexture } from '@react-three/drei';
-import nec1_close from '../../../Textures/Necklace_01_closeup.png'
-import nec1_front from '../../../Textures/Necklace_01.png'
-import {Link} from 'react-router-dom'
+import { Suspense, useRef, useEffect } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Center, Environment, useGLTF } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
+import { Link } from 'react-router-dom'
 function EaringModel(props) {
-    const arrow = '<-';
-    const group = useRef();
-    const { nodes, materials } = useGLTF('/3D/updated_necklace_01.glb');
-    const textureLoader = new THREE.TextureLoader();
-  
-    // Load diamond texture
-    const rubyRedMaterial = new THREE.MeshStandardMaterial({
-        color: new THREE.Color('#9b111e'),
-        metalness: 0.5, // Adjust the metalness value
-        roughness: 0.8,
-      });
-      
-      const silverMaterial = new THREE.MeshStandardMaterial({
-        color: new THREE.Color('#C0C0C0'),
-        metalness: 0.5, // Adjust the metalness value
-        roughness: 0.8,
-      });
-      
-      const goldenMaterial = new THREE.MeshStandardMaterial({
-        color: new THREE.Color('goldenrod'),
-        metalness: 0.5, // Adjust the metalness value
-        roughness: 0.8,
-      });
-  
-    return (
-      <>
+  const navigate = useNavigate()
+  const location = useLocation();
+  const arrow = '<-';
+  const group = useRef();
+  const { nodes, materials } = useGLTF('/3D/jashin_necklace.glb');
+  useEffect(() => {
+    if (location.state && location.state.reload) {
+      navigate('/earing2/2', { replace: false }, { state: null })
+      window.location.reload();
+    }
+  }, [location]);
+  return (
+    <>
       <Suspense fallback={null}>
+
         <Canvas
           camera={{ fov: 70, position: [0, 0, 10] }}
-          pixelratio={window.devicePixelRatio}
+          pixelRatio={window.devicePixelRatio}
           style={{ width: '100%', height: '600px' }}
           onCreated={({ gl }) => {
             gl.setSize(600, 800);
@@ -44,26 +30,29 @@ function EaringModel(props) {
         >
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} />
-          <Center/>
-          <group ref={group} {...props} position={[-1.5,-2.0,0]} scale={[0.02, 0.02, 0.02]} dispose={null}>
-    <mesh geometry={nodes.Big_diamond.geometry} material={rubyRedMaterial} rotation={[Math.PI / 2, 0, 0]} />
-    <mesh geometry={nodes.Connection_points.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} />
-    <mesh geometry={nodes.Small_diamonds.geometry} material={silverMaterial} rotation={[Math.PI / 2, 0, 0]} />
-    <mesh geometry={nodes.Backplate.geometry} material={silverMaterial} rotation={[Math.PI / 2, 0, 0]} />
-    <mesh geometry={nodes.Chain.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} />
+          <Center />
+          <group ref={group} {...props} position={[-1.5, -1, 0]} rotation={[0, 0, 0]} scale={[32.03, 32.03, 32.03]} dispose={null}>
+            <group rotation={[-Math.PI / 2, 0, 0]} scale={0.013}>
+              <group rotation={[Math.PI / 2, 0, 0]}>
+                <mesh geometry={nodes.Object_4.geometry} material={materials.Material} />
+                <mesh geometry={nodes.Object_5.geometry} material={materials.Material} />
+              </group>
+            </group>
           </group>
+
           <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
-          <Environment preset='sunset'/>
-          
+          <Environment preset='sunset' />
         </Canvas>
-  
+
+
         <div className="controls">
           <button className='back-btn'><Link to='/'>{arrow} Back</Link></button>
           <button className='view-ar'><Link to='/earing1/ar'>View in AR</Link></button>
         </div>
-        </Suspense>
-      </>
-    );
-  }
-  
-  export default EaringModel;
+      </Suspense>
+
+    </>
+  );
+}
+
+export default EaringModel;

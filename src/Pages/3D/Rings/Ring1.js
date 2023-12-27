@@ -39,9 +39,10 @@ function EaringModel(props) {
           <Center/>
           <group ref={group} {...props} rotation={[1.2, 0, 0]} position={[-1.3, 0, 0]} scale={[1.4, 1.4, 1.4]} dispose={null}>
 
-            <mesh geometry={nodes.Ring.geometry} material={silverMaterial} position={[-0.012, 0.643, 0.003]}>
-              <mesh geometry={nodes.Diamond_Holder.geometry} material={silverMaterial} />
-              <mesh geometry={nodes.Diamonds.geometry} material={diamondMaterial} />
+          
+      <mesh geometry={nodes.Ring.geometry} material={materials['White Gold']} position={[-0.012, 0.643, 0.003]}>
+        <mesh geometry={nodes.Diamond_Holder.geometry} material={materials['White Gold']} />
+        <mesh geometry={nodes.Diamonds.geometry} material={materials.Diamond} />
             </mesh>
           </group>
           <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />

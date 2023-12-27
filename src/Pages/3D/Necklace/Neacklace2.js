@@ -12,19 +12,12 @@ function EaringModel(props) {
   const textureLoader = new THREE.TextureLoader();
   const diamondTexture = textureLoader.load(nec2_close);
 
-  // Load diamond texture
-  const rubyRedMaterial = new THREE.MeshStandardMaterial({
-    color: new THREE.Color('#E0115F'),
-
-  });
-
-  const silverMaterial = new THREE.MeshStandardMaterial({
-    color: new THREE.Color('#C0C0C0'),
-
-  });
+ 
 
   const goldenMaterial = new THREE.MeshStandardMaterial({
     color: new THREE.Color('#FFD700'),
+    metalness: 1,
+    roughness: 1.8,
 
   });
 
@@ -44,6 +37,7 @@ function EaringModel(props) {
           <Center/>
           <group ref={group} {...props} position={[-1.53, 0, 0]} scale={[0.03, 0.03, 0.03]} dispose={null}>
             <mesh geometry={nodes.Gold_necklace.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} >
+            
 
 
             </mesh>

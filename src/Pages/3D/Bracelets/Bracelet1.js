@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 function EaringModel(props) {
   const arrow = '<-';
   const group = useRef();
-  const { nodes, materials } = useGLTF('/3D/Updated_bracelet_03.glb');
+  const { nodes, materials } = useGLTF('/3D/gold_bracelet.glb');
   const textureLoader = new THREE.TextureLoader();
   const diamondTexture = textureLoader.load(brace1_close);
 
@@ -34,14 +34,14 @@ function EaringModel(props) {
         >
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} />
-          <Center/>
-          <group ref={group} {...props} rotation={[1, 0, 0]} position={[-1, 0, 0]} scale={[0.03, 0.03, 0.03]} dispose={null}>
-            <mesh geometry={nodes.BRACELET_GOLD.geometry} material={goldenMaterial} rotation={[Math.PI / 2, 0, 0]} >
+          <Center />
+          <group ref={group} {...props} rotation={[1, 0, 0]} position={[-1.39, 0, 0]} scale={[0.5, 0.5, 0.5]} dispose={null}>
 
-            </mesh>
+            <mesh geometry={nodes.Object_4.geometry} material={materials['Material.001']} position={[-0.029, 2.247, 0.229]} rotation={[3.003, 0, 0]} scale={[1, 1, 1.517]} />
+            <mesh geometry={nodes.Object_6.geometry} material={materials['Material.003']} position={[0.012, 0.103, -0.006]} />
           </group>
           <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
-          <Environment preset='sunset' />
+          <Environment preset='sunset'/>
         </Canvas>
 
         <div className="controls">
