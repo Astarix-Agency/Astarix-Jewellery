@@ -14,7 +14,7 @@ const DeepARComponent = (props) => {
     const initializeDeepAR = async () => {
       try {
         const deepAR = await deepar.initialize({
-          licenseKey: '7bfd3466084e77afcf7c2615b54ba7f452de93638926cd9eebccbdcdee0a238465db251fc346fa39',
+          licenseKey: '8f06fff3c7f2ea62499be74656cd913c81a3702be39cbe36128e3d0dfc39d417d674fd06f7cf9a1d',
           previewElement: document.querySelector('#deepar-div'),
           effect: `/AR/${props.Model}.deepar`
         });
