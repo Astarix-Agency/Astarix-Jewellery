@@ -62,7 +62,9 @@ const Home = () => {
             </div>
             <div className="earing">
                 <div className="ornament-head">
+                    <div>
                     <h1>{All ? 'All' : earing ? 'Earrings' : necklace?'Necklace':bracelet?'Bracelet':'Rings'}</h1>
+                    </div>
                 </div>
                 {All && 
                 <>

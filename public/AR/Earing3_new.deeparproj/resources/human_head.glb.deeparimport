@@ -1,0 +1,27 @@
+{
+    "convertScale": false,
+    "dataType": "model",
+    "generateSmoothNormals": true,
+    "importAnimations": true,
+    "limitBoneWeights": true,
+    "materialModelRefs": {
+        "Material.002": [
+            "Material.002.mat"
+        ],
+        "Material.004": [
+            "Material.004.mat"
+        ]
+    },
+    "meshModelRefs": {
+        "eye_low_L.001_Material.002_0": [
+            "eye_low_L.001_Material.002_0.armesh"
+        ],
+        "eye_low_L_Material.002_0": [
+            "eye_low_L_Material.002_0.armesh"
+        ],
+        "man_body_0014 uv map_Material.004_0": [
+            "man_body_0014 uv map_Material.004_0.armesh"
+        ]
+    },
+    "type": "scene"
+}

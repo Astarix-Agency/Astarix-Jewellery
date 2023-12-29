@@ -1,0 +1,30 @@
+{
+    "convertScale": false,
+    "dataType": "model",
+    "generateSmoothNormals": true,
+    "importAnimations": true,
+    "limitBoneWeights": true,
+    "materialModelRefs": {
+        "Material": [
+            "Material_4.mat"
+        ],
+        "Material.001": [
+            "Material.001.mat"
+        ],
+        "Material.002": [
+            "Material.002_2.mat"
+        ]
+    },
+    "meshModelRefs": {
+        "Cylinder.028-0": [
+            "Cylinder.028-0.armesh"
+        ],
+        "Cylinder.028-1": [
+            "Cylinder.028-1.armesh"
+        ],
+        "Cylinder.028-2": [
+            "Cylinder.028-2.armesh"
+        ]
+    },
+    "type": "scene"
+}

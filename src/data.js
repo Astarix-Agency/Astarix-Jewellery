@@ -3,7 +3,7 @@ export const Earings = [
     {
       id: 1,
       name:'Earring 1',
-      desc:'Glossy Gold With Silver holder',
+      desc:'Glossy Gold',
       price:'$12',
       image: '/images/earing1.png',  
       link3D: '/earing1/1',
@@ -21,6 +21,16 @@ export const Earings = [
       linkAR: '/earing2/ar',
 
     },
+    {
+      id: 3,
+      name:'Earring 3',
+      desc:'Long Earring',
+      price:'$30',
+      image: '/images/earing3.png',  
+      link3D: '/earing3/3',
+      linkAR: '/earing3/ar',
+
+    },
    
   ];
   
@@ -28,21 +38,21 @@ export const Earings = [
     
     {
       id: 1,
-      desc:'Rounded Gold Necklace',
+      desc:'Rounded Necklace',
       name:'Necklace 1',
       price:'$12',
       image: '/images/necklace2.png',  
-      link3D: '/necklace2/2',
-      linkAR: '/necklace2/ar'
+      link3D: '/necklace1/1',
+      linkAR: '/necklace1/ar'
     },
     {
       id: 2,
-      desc:'Glossy Shine With Gold Chains',
+      desc:'Glossy Shine',
       name:'Necklace 2',
       price:'$25',
       image: '/images/necklace3.png',  
-      link3D: '/necklace3/3',
-      linkAR: '/necklace3/ar'
+      link3D: '/necklace2/2',
+      linkAR: '/necklace2/ar'
     },
     
   ];

@@ -1,0 +1,556 @@
+{
+    "animationEnabled": true,
+    "children": [
+        {
+            "animationEnabled": true,
+            "children": [
+                {
+                    "animationEnabled": true,
+                    "children": [
+                        {
+                            "animationEnabled": true,
+                            "children": [
+                                {
+                                    "animationEnabled": true,
+                                    "children": [
+                                        {
+                                            "animationEnabled": true,
+                                            "components": [
+                                                {
+                                                    "blendShapeWeightsExpanded": false,
+                                                    "bonesExpanded": false,
+                                                    "enabled": true,
+                                                    "material": "~/Material.mat",
+                                                    "mesh": "~/eye_low_L_Material.002_0.armesh",
+                                                    "meshDriver": "none",
+                                                    "open": true,
+                                                    "type": "meshRenderer"
+                                                }
+                                            ],
+                                            "depth": 0,
+                                            "dynamicUv": "disabled",
+                                            "editorAnimationsOpen": false,
+                                            "editorOpen": false,
+                                            "editorPropertyOpen": true,
+                                            "editorSelectedAnimation": "",
+                                            "enabled": true,
+                                            "localPosition": [
+                                                0.0,
+                                                0.0,
+                                                0.0
+                                            ],
+                                            "localRotation": [
+                                                0.0,
+                                                0.0,
+                                                0.0,
+                                                1.0
+                                            ],
+                                            "localScale": [
+                                                1.0,
+                                                1.0,
+                                                1.0
+                                            ],
+                                            "name": "eye_low_L_Material.002_0",
+                                            "viewId": 2
+                                        }
+                                    ],
+                                    "depth": 0,
+                                    "dynamicUv": "disabled",
+                                    "editorAnimationsOpen": false,
+                                    "editorOpen": true,
+                                    "editorPropertyOpen": true,
+                                    "editorSelectedAnimation": "",
+                                    "enabled": true,
+                                    "localPosition": [
+                                        0.0,
+                                        0.0,
+                                        0.0
+                                    ],
+                                    "localRotation": [
+                                        -0.7071068286895752,
+                                        0.0,
+                                        0.0,
+                                        0.7071067094802856
+                                    ],
+                                    "localScale": [
+                                        100.0,
+                                        100.0,
+                                        100.0
+                                    ],
+                                    "name": "eye_low_L",
+                                    "viewId": 2
+                                },
+                                {
+                                    "animationEnabled": true,
+                                    "children": [
+                                        {
+                                            "animationEnabled": true,
+                                            "components": [
+                                                {
+                                                    "blendShapeWeightsExpanded": false,
+                                                    "bonesExpanded": false,
+                                                    "enabled": true,
+                                                    "material": "~/Material.mat",
+                                                    "mesh": "~/eye_low_L.001_Material.002_0.armesh",
+                                                    "meshDriver": "none",
+                                                    "open": true,
+                                                    "type": "meshRenderer"
+                                                }
+                                            ],
+                                            "depth": 0,
+                                            "dynamicUv": "disabled",
+                                            "editorAnimationsOpen": false,
+                                            "editorOpen": false,
+                                            "editorPropertyOpen": true,
+                                            "editorSelectedAnimation": "",
+                                            "enabled": true,
+                                            "localPosition": [
+                                                0.0,
+                                                0.0,
+                                                0.0
+                                            ],
+                                            "localRotation": [
+                                                0.0,
+                                                0.0,
+                                                0.0,
+                                                1.0
+                                            ],
+                                            "localScale": [
+                                                1.0,
+                                                1.0,
+                                                1.0
+                                            ],
+                                            "name": "eye_low_L.001_Material.002_0",
+                                            "viewId": 2
+                                        }
+                                    ],
+                                    "depth": 0,
+                                    "dynamicUv": "disabled",
+                                    "editorAnimationsOpen": false,
+                                    "editorOpen": true,
+                                    "editorPropertyOpen": true,
+                                    "editorSelectedAnimation": "",
+                                    "enabled": true,
+                                    "localPosition": [
+                                        0.0,
+                                        0.0,
+                                        0.0
+                                    ],
+                                    "localRotation": [
+                                        -0.7071068286895752,
+                                        0.0,
+                                        0.0,
+                                        0.7071067094802856
+                                    ],
+                                    "localScale": [
+                                        100.0,
+                                        100.0,
+                                        100.0
+                                    ],
+                                    "name": "eye_low_L.001",
+                                    "viewId": 2
+                                },
+                                {
+                                    "animationEnabled": true,
+                                    "children": [
+                                        {
+                                            "animationEnabled": true,
+                                            "components": [
+                                                {
+                                                    "blendShapeWeightsExpanded": false,
+                                                    "bonesExpanded": false,
+                                                    "enabled": true,
+                                                    "material": "~/Material.mat",
+                                                    "mesh": "~/man_body_0014 uv map_Material.004_0.armesh",
+                                                    "meshDriver": "none",
+                                                    "open": true,
+                                                    "type": "meshRenderer"
+                                                }
+                                            ],
+                                            "depth": 0,
+                                            "dynamicUv": "disabled",
+                                            "editorAnimationsOpen": false,
+                                            "editorOpen": false,
+                                            "editorPropertyOpen": true,
+                                            "editorSelectedAnimation": "",
+                                            "enabled": true,
+                                            "localPosition": [
+                                                0.0,
+                                                0.0,
+                                                0.0
+                                            ],
+                                            "localRotation": [
+                                                0.0,
+                                                0.0,
+                                                0.0,
+                                                1.0
+                                            ],
+                                            "localScale": [
+                                                1.0,
+                                                1.0,
+                                                1.0
+                                            ],
+                                            "name": "man_body_0014 uv map_Material.004_0",
+                                            "viewId": 2
+                                        }
+                                    ],
+                                    "depth": 0,
+                                    "dynamicUv": "disabled",
+                                    "editorAnimationsOpen": false,
+                                    "editorOpen": true,
+                                    "editorPropertyOpen": true,
+                                    "editorSelectedAnimation": "",
+                                    "enabled": true,
+                                    "localPosition": [
+                                        0.0,
+                                        0.0,
+                                        0.0
+                                    ],
+                                    "localRotation": [
+                                        -0.7071068286895752,
+                                        0.0,
+                                        0.0,
+                                        0.7071067094802856
+                                    ],
+                                    "localScale": [
+                                        100.0,
+                                        100.0,
+                                        100.0
+                                    ],
+                                    "name": "man_body_0014 uv map",
+                                    "viewId": 2
+                                }
+                            ],
+                            "depth": 0,
+                            "dynamicUv": "disabled",
+                            "editorAnimationsOpen": false,
+                            "editorOpen": true,
+                            "editorPropertyOpen": true,
+                            "editorSelectedAnimation": "",
+                            "enabled": true,
+                            "localPosition": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "localRotation": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "localScale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "name": "RootNode",
+                            "viewId": 2
+                        }
+                    ],
+                    "depth": 0,
+                    "dynamicUv": "disabled",
+                    "editorAnimationsOpen": false,
+                    "editorOpen": true,
+                    "editorPropertyOpen": true,
+                    "editorSelectedAnimation": "",
+                    "enabled": true,
+                    "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "localRotation": [
+                        0.7071067690849304,
+                        0.0,
+                        0.0,
+                        0.7071067690849304
+                    ],
+                    "localScale": [
+                        0.009999999776482582,
+                        0.009999999776482582,
+                        0.009999999776482582
+                    ],
+                    "name": "4f214240a3724bd18b5543df39385e72.fbx",
+                    "viewId": 2
+                }
+            ],
+            "depth": 0,
+            "dynamicUv": "disabled",
+            "editorAnimationsOpen": false,
+            "editorOpen": false,
+            "editorPropertyOpen": true,
+            "editorSelectedAnimation": "",
+            "enabled": true,
+            "localPosition": [
+                0.16200000047683716,
+                -147.3000030517578,
+                -12.186881065368652
+            ],
+            "localRotation": [
+                -0.7071066498756409,
+                0.0,
+                0.0,
+                0.70710688829422
+            ],
+            "localScale": [
+                110.0,
+                108.0,
+                90.0
+            ],
+            "name": "human_head.glb",
+            "sceneBase": "~/human_head.glb",
+            "viewId": 2
+        },
+        {
+            "animationEnabled": true,
+            "children": [
+                {
+                    "animationEnabled": true,
+                    "components": [
+                        {
+                            "blendShapeWeightsExpanded": false,
+                            "bonesExpanded": false,
+                            "enabled": true,
+                            "material": "~/Material.002_2.mat",
+                            "mesh": "~/Cylinder.028-0.armesh",
+                            "meshDriver": "none",
+                            "open": true,
+                            "type": "meshRenderer"
+                        }
+                    ],
+                    "depth": 0,
+                    "dynamicUv": "disabled",
+                    "editorAnimationsOpen": false,
+                    "editorOpen": false,
+                    "editorPropertyOpen": true,
+                    "editorSelectedAnimation": "",
+                    "enabled": true,
+                    "localPosition": [
+                        3.4103357791900635,
+                        3.280106782913208,
+                        -0.709482729434967
+                    ],
+                    "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "localScale": [
+                        -0.030008193105459213,
+                        -1.184921383857727,
+                        -0.030008193105459213
+                    ],
+                    "name": "gold earrings left.glb",
+                    "sceneBase": "~/gold earrings left.glb",
+                    "viewId": 2
+                },
+                {
+                    "animationEnabled": true,
+                    "components": [
+                        {
+                            "blendShapeWeightsExpanded": false,
+                            "bonesExpanded": false,
+                            "enabled": true,
+                            "material": "~/Material_5.mat",
+                            "mesh": "~/Sphere.002-0.armesh",
+                            "meshDriver": "none",
+                            "open": true,
+                            "type": "meshRenderer"
+                        }
+                    ],
+                    "depth": 0,
+                    "dynamicUv": "disabled",
+                    "editorAnimationsOpen": false,
+                    "editorOpen": false,
+                    "editorPropertyOpen": true,
+                    "editorSelectedAnimation": "",
+                    "enabled": true,
+                    "localPosition": [
+                        -0.01884174346923828,
+                        4.883862495422363,
+                        -0.6970158219337463
+                    ],
+                    "localRotation": [
+                        0.0,
+                        0.7071068286895752,
+                        0.0,
+                        0.7071067094802856
+                    ],
+                    "localScale": [
+                        0.28361237049102783,
+                        0.5102546811103821,
+                        0.5102547407150269
+                    ],
+                    "name": "gold earrings right.glb",
+                    "sceneBase": "~/gold earrings right.glb",
+                    "viewId": 2
+                }
+            ],
+            "depth": 0,
+            "dynamicUv": "disabled",
+            "editorAnimationsOpen": false,
+            "editorOpen": true,
+            "editorPropertyOpen": true,
+            "editorSelectedAnimation": "",
+            "enabled": true,
+            "localPosition": [
+                -13.8254976272583,
+                -9.726286888122559,
+                -7.5603437423706055
+            ],
+            "localRotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "localScale": [
+                1.5,
+                1.5,
+                0.5
+            ],
+            "name": "Node",
+            "viewId": 2
+        },
+        {
+            "animationEnabled": true,
+            "children": [
+                {
+                    "animationEnabled": true,
+                    "components": [
+                        {
+                            "blendShapeWeightsExpanded": false,
+                            "bonesExpanded": false,
+                            "enabled": true,
+                            "material": "~/Material.002_2.mat",
+                            "mesh": "~/Cylinder.028-0.armesh",
+                            "meshDriver": "none",
+                            "open": true,
+                            "type": "meshRenderer"
+                        }
+                    ],
+                    "depth": 0,
+                    "dynamicUv": "disabled",
+                    "editorAnimationsOpen": false,
+                    "editorOpen": false,
+                    "editorPropertyOpen": true,
+                    "editorSelectedAnimation": "",
+                    "enabled": true,
+                    "localPosition": [
+                        3.4103357791900635,
+                        3.280106782913208,
+                        -0.709482729434967
+                    ],
+                    "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "localScale": [
+                        -0.030008193105459213,
+                        -1.184921383857727,
+                        -0.030008193105459213
+                    ],
+                    "name": "gold earrings left.glb_2",
+                    "sceneBase": "~/gold earrings left.glb",
+                    "viewId": 2
+                },
+                {
+                    "animationEnabled": true,
+                    "components": [
+                        {
+                            "blendShapeWeightsExpanded": false,
+                            "bonesExpanded": false,
+                            "enabled": true,
+                            "material": "~/Material_5.mat",
+                            "mesh": "~/Sphere.002-0.armesh",
+                            "meshDriver": "none",
+                            "open": true,
+                            "type": "meshRenderer"
+                        }
+                    ],
+                    "depth": 0,
+                    "dynamicUv": "disabled",
+                    "editorAnimationsOpen": false,
+                    "editorOpen": false,
+                    "editorPropertyOpen": true,
+                    "editorSelectedAnimation": "",
+                    "enabled": true,
+                    "localPosition": [
+                        -0.01884174346923828,
+                        4.883862495422363,
+                        -0.6970158219337463
+                    ],
+                    "localRotation": [
+                        0.0,
+                        0.7071068286895752,
+                        0.0,
+                        0.7071067094802856
+                    ],
+                    "localScale": [
+                        0.28361237049102783,
+                        0.5102546811103821,
+                        0.5102547407150269
+                    ],
+                    "name": "gold earrings right.glb_2",
+                    "sceneBase": "~/gold earrings right.glb",
+                    "viewId": 2
+                }
+            ],
+            "depth": 0,
+            "dynamicUv": "disabled",
+            "editorAnimationsOpen": false,
+            "editorOpen": false,
+            "editorPropertyOpen": true,
+            "editorSelectedAnimation": "",
+            "enabled": true,
+            "localPosition": [
+                5.5926642417907715,
+                -9.726286888122559,
+                -7.5603437423706055
+            ],
+            "localRotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "localScale": [
+                1.5,
+                1.5,
+                0.5
+            ],
+            "name": "Node_2",
+            "viewId": 2
+        }
+    ],
+    "depth": 0,
+    "dynamicUv": "disabled",
+    "editorAnimationsOpen": false,
+    "editorOpen": true,
+    "editorPropertyOpen": true,
+    "editorSelectedAnimation": "",
+    "enabled": true,
+    "hiddenViewIds": [],
+    "localEulerAngles": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "localPosition": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "localScale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "name": "Root",
+    "space": "face",
+    "viewId": 2
+}

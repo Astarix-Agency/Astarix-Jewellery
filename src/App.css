@@ -162,6 +162,82 @@ button
     width: 90px;
     font-size: 15px;
   }
+@media only screen 
+and (min-width: 1024px) 
+and (max-width: 1486px) 
+
+{
+  .tags button
+  {
+    width: 150px;
+    font-size: 22px;
+    height: 50px;
+    padding: 5px;
+  }
+  .tags
+  {
+    justify-content: center;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+  }
+  .ornament-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px; 
+  }
+  .profile
+  {
+    margin-top:100px;
+    margin-right:20px ;
+  }
+  .ornament-head h1 {
+    margin: 0; 
+    font-size: 52px;
+    margin-top:10px ;
+  }
+  .earing-logo 
+  {
+    margin-left:50px ;
+  }
+  .earing-logo img
+  {
+    height: 270px;
+    width: 200px;
+  }
+  .back-btn
+  {
+    width: 200px;
+    height: 100px;
+  }
+  .earing-info
+  {
+    height: 530px;
+    width: 300px;
+  }
+  h2
+  {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 23px;
+  }
+  .logo img
+{
+    width: 250px;
+    height: 250px;
+}
+  .controls a
+  {
+    font-size: 30px;
+
+  }
+  canvas
+  {
+    width: 100%;
+  }
+}
+
   @media (max-width: 768px) {
     .earing-info {
       flex-direction: column; 

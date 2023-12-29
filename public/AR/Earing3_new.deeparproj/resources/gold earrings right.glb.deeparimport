@@ -1,0 +1,30 @@
+{
+    "convertScale": false,
+    "dataType": "model",
+    "generateSmoothNormals": true,
+    "importAnimations": true,
+    "limitBoneWeights": true,
+    "materialModelRefs": {
+        "Material": [
+            "Material_5.mat"
+        ],
+        "Material.001": [
+            "Material.001_2.mat"
+        ],
+        "Material.002": [
+            "Material.002_3.mat"
+        ]
+    },
+    "meshModelRefs": {
+        "Sphere.002-0": [
+            "Sphere.002-0.armesh"
+        ],
+        "Sphere.002-1": [
+            "Sphere.002-1.armesh"
+        ],
+        "Sphere.002-2": [
+            "Sphere.002-2.armesh"
+        ]
+    },
+    "type": "scene"
+}

@@ -1,0 +1,97 @@
+{
+    "flags": {
+        "blendMode": "off",
+        "cullMode": "off",
+        "enableDepthTest": true,
+        "writeAlpha": true,
+        "writeColor": true,
+        "writeDepth": true
+    },
+    "shader": "__dprs_int_f18caee1_d65d_4319_957b_2f6556abda06__/pbr_gltf_shader.dprx",
+    "uniformValues": {
+        "s_albedoMap": {
+            "texture": "maincubes_Bake1_PBR_Diffuse.png",
+            "type": "texture"
+        },
+        "s_ambientOcclusionMap": {
+            "texture": "__dprs_int_f18caee1_d65d_4319_957b_2f6556abda06__/empty_texture_non_color_data.png",
+            "type": "texture"
+        },
+        "s_emissiveTexture": {
+            "texture": "__dprs_int_f18caee1_d65d_4319_957b_2f6556abda06__/empty_texture_non_color_data.png",
+            "type": "texture"
+        },
+        "s_environmentMap": {
+            "texture": "__dprs_int_f18caee1_d65d_4319_957b_2f6556abda06__/sample_environment_map.jpg",
+            "type": "texture"
+        },
+        "s_metalRoughnessMap": {
+            "texture": "maincubes_Bake1_PBR_Metalness-maincubes_Bake1_PBR_Roughness.png",
+            "type": "texture"
+        },
+        "s_normalMap": {
+            "texture": "__dprs_int_f18caee1_d65d_4319_957b_2f6556abda06__/empty_texture_normal_map.png",
+            "type": "texture"
+        },
+        "s_transmissiveMap": {
+            "texture": "__dprs_int_f18caee1_d65d_4319_957b_2f6556abda06__/empty_texture_non_color_data.png",
+            "type": "texture"
+        },
+        "u_ambientOcclusionPower": {
+            "dataType": "slider",
+            "type": "vector",
+            "value": 1.0
+        },
+        "u_baseColorFactor": {
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "dataType": "color",
+            "type": "vector"
+        },
+        "u_directionalLight": {
+            "data": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "dataType": "numeric",
+            "type": "vector"
+        },
+        "u_directionalLightColor": {
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "dataType": "color",
+            "type": "vector"
+        },
+        "u_emissiveColor": {
+            "color": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dataType": "color",
+            "type": "vector"
+        },
+        "u_metalnessMultiplier": {
+            "dataType": "slider",
+            "type": "vector",
+            "value": 1.0
+        },
+        "u_roughnessMultiplier": {
+            "dataType": "slider",
+            "type": "vector",
+            "value": 1.0
+        },
+        "u_transmissiveFactor": {
+            "dataType": "slider",
+            "type": "vector",
+            "value": 0.0
+        }
+    }
+}
